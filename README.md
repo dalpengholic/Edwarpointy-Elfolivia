@@ -1,5 +1,13 @@
 # IQM-assignment
 ## IQM-assignment-2
+Main concept of Dockerfile
+- Using multi-stage builds to create a Minimum-Viable Product (MVP) Image
+  - 1st stage
+     - To build binary file, copy only necessary files like go.mod, webserver.go and READEME.md from localhost
+  - 2nd stage
+     - Copy from the files from 1st stage to busybox image
+
+
 How to build an echo server from Dockerfile?
 - 1. Open terminal and create a folder and download this branch in the folder: 
 ```Shell
