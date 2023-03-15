@@ -42,6 +42,6 @@ $ ./webserver -c moimoi -p 8888
 
 - 4. Open new terminal and run curl command
 // In case of running server with the advanced command
-$ curl http://localhost:8888
+`$ curl http://localhost:8888`
 
  
