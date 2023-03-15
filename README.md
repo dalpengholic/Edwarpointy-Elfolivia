@@ -1,14 +1,15 @@
 # IQM-assignment
 ## IQM-assignment-2
-Main concept of Dockerfile
+### Main concept of Dockerfile
 - Using multi-stage builds to create a Minimum-Viable Product (MVP) Image
   - 1st stage
      - To build binary file, copy only necessary files like go.mod, webserver.go and READEME.md from localhost
   - 2nd stage
      - Copy from the files from 1st stage to busybox image
 
+- The size of mvp image decreased to 11.5MB  
 
-How to build an echo server from Dockerfile?
+### How to build an echo server from Dockerfile?
 - 1. Open terminal and create a folder and download this branch in the folder: 
 ```Shell
 $ mkdir mytmp
@@ -27,12 +28,12 @@ $ git clone git@github.com:dalpengholic/IQM-assignment.git
 // 1. Default command 
 // Using default message "hello"
 // and default port number "8000"
-docker run --rm -p 8000:8000 my_golang_echo_server:latest
+$ docker run --rm -p 8000:8000 my_golang_echo_server:latest
 
 // 2. Advanced command
 // Using user defined message  "-e EnvMessage=moimoi"
 // and using user defined port number "-e EnvPort=8888"
-docker run --rm -p 8888:8888 -e EnvPort=8888 -e EnvMessage=moimoi my_golang_echo_server:latest
+$ docker run --rm -p 8888:8888 -e EnvPort=8888 -e EnvMessage=moimoi my_golang_echo_server:latest
 
 
 
