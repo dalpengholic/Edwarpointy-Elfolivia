@@ -4,8 +4,8 @@ FROM golang:1.20.2-alpine3.16
 # Set the working directory to /app
 WORKDIR /app
 
-# Copy the current directory contents into the container at /app
-COPY . /app
+# Copy the necessary contents into the container at /app
+COPY go.mod webserver.go README.md /app/
 
 # Build the Golang binary
 RUN go build -o main .
