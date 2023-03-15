@@ -31,17 +31,18 @@ $ git checkout task-1
 
 - 3. Run echo server
 ```Shell
-// 1. Default command 
+## 1. Default command 
 $ ./webserver
 
-// 2. Advanced command
-// Using user defined message  "-c moimoi"
-// and using user defined port number "-p 8888"
+## 2. Advanced command
+## Using user defined message  "-c moimoi"
+## and using user defined port number "-p 8888"
 $ ./webserver -c moimoi -p 8888
 ```
 
 - 4. Open new terminal and run curl command
-// In case of running server with the advanced command
-`$ curl http://localhost:8888`
-
+```
+## In case of running server with the advanced command
+$ curl http://localhost:8888
+```
  
