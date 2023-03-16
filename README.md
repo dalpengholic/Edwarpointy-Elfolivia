@@ -60,8 +60,9 @@ WEBSERVER2_NAME=app2
 WEBSERVER3_NAME=newapp3
 ```
   - 3. Rerun with --build flag
-`$ docker-compose up -d --build`
-
+```
+$ docker-compose up -d --build
+```
 
   - 5. Check with curl command
 ```Shell 
