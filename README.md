@@ -1,5 +1,15 @@
 # IQM-assignment
 ## IQM-assignment-3
+### Main Concept
+- 1. Making a reverse proxy server to have a single HTTP endpoint
+  - To have a simple reverse proxy server, I avoided to bring `Traefik` or `Nginx` well-known reverse proxy
+  - Echo Servers have to be set and ready behind the reverese proxy so that a alient only communicates with the reverse proxy server 
+
+- 2. Parsed `docker-compose.yml` used during the build of reverse proxy
+  - If you add more service blocks at docker-compose.yml file and edit `.env`, the reverse-proxy could parse the yaml file and can route to the new instances after rebuilding 
+
+- 3. `.env` file used for convenience 
+
 ### How to use
 - 1. Open terminal and create a folder and download this branch in the folder:
 ```Shell
