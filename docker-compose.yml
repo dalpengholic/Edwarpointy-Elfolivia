@@ -38,7 +38,7 @@ services:
     hostname: ${WEBSERVER2_NAME}
     environment:
       - EnvPort=8882
-      - EnvMessage=hihi
+      - EnvMessage=hello
     networks:
       - backend
 

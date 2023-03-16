@@ -25,10 +25,16 @@ WEBSERVER2_NAME=app2
 ```
 
 - 4. Build docker image
-`$ docker-compose up -d`
+```Shell
+$ docker-compose up -d
+```
 
 - 5. Check with curl command
-```Shell
+```Shell 
+$ curl http://localhost:8080/app1
+hello from app1
+$ curl http://localhost:8080/app2
+hello from app2
 ```
 
 - 5. If you want to add more echo server
