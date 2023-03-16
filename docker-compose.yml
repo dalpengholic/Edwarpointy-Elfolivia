@@ -3,7 +3,9 @@ version: '3'
 services:
   reverse-proxy:
     image: my_golang_proxy:latest
-    build: ./Dockerfile.reverse
+    build: 
+      context: .
+      dockerfile: ./Dockerfile.reverse
     container_name: reverse
     ports:
       - "8080:8080"

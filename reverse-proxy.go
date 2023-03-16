@@ -7,10 +7,7 @@ import (
 	"strings"
 	"net/http"
 	"net/http/httputil"
-//	"net/http/httptest"
 	"net/url"
-//	"os"
-//        "time"
 	"gopkg.in/yaml.v2"
 )
 
@@ -69,52 +66,13 @@ func MakeBackendMap(param_compose DockerCompose) map[string]*url.URL{
 func main() {
         // Parsing docker-compose.yml file to info(container name, port, env variables)
 	dockerCompose := ParseVariables("docker-compose.yml")
-//	for k,v := range dockerCompose.Services {
-//	        fmt.Println("Print services")
-//		fmt.Println(k, v)
-//	}
-
-//        fmt.Println("")
-//	fmt.Println("print dockerCompose.Services: ", dockerCompose.Services)
-//        fmt.Println("")
-//        fmt.Println("print dockerCompose.Services[app1]: ", dockerCompose.Services["app1"])	
-//        fmt.Println("")
-//        fmt.Println("print dockerCompose.Services[app1].ContainerName: ", dockerCompose.Services["app1"].ContainerName)
-//        fmt.Println("")
-//        fmt.Println("print dockerCompose.Services[app1].Ports: ", dockerCompose.Services["app1"].Ports)
-//        fmt.Println("")
-//        fmt.Println("print dockerCompose.Services[app1].Environment: ", dockerCompose.Services["app1"].Environment)
-//        fmt.Println("")
-//        fmt.Println("print dockerCompose.Services[app1].Environment[0]: ", dockerCompose.Services["app1"].Environment[0])
-//        fmt.Println("")
-//	env_variable := strings.Split(dockerCompose.Services["app1"].Environment[0], "=")
-//	fmt.Println("print split string: dockerCompose.Services[app1].Environment[0]: ", env_variable)
-//	fmt.Println("print select first string: ", env_variable[0])
-        fmt.Println("++++++++++++++++++++++++++")
 	backendURLs := MakeBackendMap(dockerCompose)
         for k,v := range backendURLs{
-	    fmt.Println(k)
-	    fmt.Println(v)
+		fmt.Println("Possible path: "+k)
+		fmt.Printf("Full URL: %s\n",v)
 	}
-//	defaultScheme := "http"
-//	defaultHost := "localhost:8080"
-//	defaultPath := "/no-match"
 
 
-	//path, err := os.Getwd()
-        //if err != nil {
-	//    log.Println(err)
-        //}
-	//fmt.Println("")
-	//fmt.Println("mypath:",path)  
-//	backendApp1URL := fmt.Sprintf("http://%s:8765", os.Getenv("BACKEND_APP1_NAME"))
-//	backendApp2URL := fmt.Sprintf("http://%s:8000", os.Getenv("BACKEND_APP2_NAME"))
-//
-//	backendURLs := map[string]*url.URL{
-//		"/app1": mustParseURL(backendApp1URL),
-//		"/app2": mustParseURL(backendApp2URL),
-//	}
-//
 	reverseProxy := &httputil.ReverseProxy{
 		Director: func(req *http.Request) {
 		if backendURL, ok := backendURLs[req.URL.Path]; ok {
@@ -122,8 +80,8 @@ func main() {
 			req.URL.Host = backendURL.Host}
 		}}	
 
-
-        
-	http.ListenAndServe(":8080", reverseProxy)
+	listening_port := ":8080"	
+	fmt.Println("Listening on ", listening_port)
+	http.ListenAndServe(listening_port, reverseProxy)
 }
 
