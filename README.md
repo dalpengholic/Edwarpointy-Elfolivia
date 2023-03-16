@@ -52,7 +52,7 @@ WEBSERVER2_NAME=backapp2
 WEBSERVER3_NAME=backapp3
 ```
   - 3. Rerun with --build flag
-``$ docker-compose up -d --build`
+`$ docker-compose up -d --build`
 
 ## IQM-assignment-2
 ### Main concept of Dockerfile
