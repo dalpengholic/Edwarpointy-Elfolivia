@@ -41,7 +41,7 @@ hello from app2
 ```
 
 - 6. If you want to add more echo server
-- 6.1  Add more service block to docker-compose file
+  -  Add more service block to docker-compose file
 ```Shell
   newapp3:
     image: my_webserver
@@ -55,7 +55,7 @@ hello from app2
 ```
 
  
-- 6.2 Add env variabe at .env
+  -  Add env variabe at .env
 ```YAML
 WEBSERVER1_NAME=app1
 WEBSERVER2_NAME=app2
