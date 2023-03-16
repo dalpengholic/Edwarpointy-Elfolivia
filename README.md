@@ -3,7 +3,7 @@
 To create a smaller Minimum-Viable Product (MVP) image, I used a two-stage approach called `multi-stage builds`. In the first stage, I only copied the necessary files to build the binary file, and in the second stage, I added those files to the busybox image. As a result, the MVP image size decreased from 314MB to 11.5MB.
 
 ### How to build an echo server from Dockerfile?
-- 1. Open terminal and create a folder and download this branch in the folder: 
+- 1. Open terminal and create a folder and download this branch in the folder 
 ```Shell
 $ mkdir mytmp
 $ cd mytmp
