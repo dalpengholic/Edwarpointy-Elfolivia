@@ -9,7 +9,7 @@ To ensure that the reverse proxy server could route traffic to new instances, I 
 ```Shell
 $ mkdir mytmp
 $ cd mytmp
-$ git clone git@github.com:dalpengholic/Edwarpointy-Elfolivia.git
+$ git clone https://github.com/dalpengholic/Edwarpointy-Elfolivia.git
 ```
 - 2. Checkout to task-3 branch
 ```Shell
