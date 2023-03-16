@@ -1,5 +1,24 @@
 # IQM-assignment
 ## IQM-assignment-3
+### How to use
+- 1. Open terminal and create a folder and download this branch in the folder:
+```Shell
+$ mkdir mytmp
+$ cd mytmp
+$ git clone git@github.com:dalpengholic/IQM-assignment.git
+```
+- 2. Checkout to task-3 branch
+`$ git checkout task-3`
+
+- 3. Create `.env` file
+`$ vim .env`
+```Shell
+WEBSERVER1_NAME=backapp1
+WEBSERVER2_NAME=backapp2
+```
+
+- 4. Build docker image
+`$ docker-compose up -d`
 
 
 
