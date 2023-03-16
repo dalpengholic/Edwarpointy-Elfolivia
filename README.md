@@ -76,6 +76,7 @@ moi from newapp3
 
 ### References for reverse proxy
 - https://pkg.go.dev/net/http
+- https://pkg.go.dev/net/http/httputil
 - https://dev.to/b0r/implement-reverse-proxy-in-gogolang-2cp4
 - https://www.codedodle.com/go-reverse-proxy-example.html
 - https://fideloper.com/golang-single-host-reverse-proxy
