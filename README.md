@@ -53,17 +53,22 @@ hello from app2
     networks:
       - backend
 ```
+
+- 
   - Add env variabe at .env
 ```YAML
 WEBSERVER1_NAME=app1
 WEBSERVER2_NAME=app2
 WEBSERVER3_NAME=newapp3
 ```
+
+- 
   - Rerun with --build flag
 ```Shell
 $ docker-compose up -d --build
 ```
 
+- 
   - Check with curl command
 ```Shell 
 $ curl http://localhost:8080/app1
