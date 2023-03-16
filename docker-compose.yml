@@ -2,7 +2,7 @@ version: '3'
 
 services:
   reverse-proxy:
-    image: 0314-reverse-4:latest
+    image: my_golang_proxy:latest
     container_name: reverse
     ports:
       - "8080:8080"
