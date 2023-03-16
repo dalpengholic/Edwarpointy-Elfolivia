@@ -6,6 +6,7 @@
 $ mkdir mytmp
 $ cd mytmp
 $ git clone git@github.com:dalpengholic/IQM-assignment.git
+$ cd IQM-assignment
 ```
 - 2. Checkout to task-3 branch
 `$ git checkout task-3`
@@ -20,8 +21,28 @@ WEBSERVER2_NAME=backapp2
 - 4. Build docker image
 `$ docker-compose up -d`
 
-
-
+- 5. If you want to add more echo server
+  - 1. Add more service block to docker-compose file
+```
+...
+  app3:
+    image: webserver-6
+    container_name: ${WEBSERVER3_NAME}
+    hostname: ${WEBSERVER3_NAME}
+    environment:
+      - EnvPort=8883
+      - EnvMessage=hihihoho
+    networks:
+      - backend
+```
+  - 2. Add env variabe at .env
+```
+WEBSERVER1_NAME=backapp1
+WEBSERVER2_NAME=backapp2
+WEBSERVER3_NAME=backapp3
+```
+  - 3. Rerun with --build flag
+``$ docker-compose up -d --build`
 
 ## IQM-assignment-2
 ### Main concept of Dockerfile

@@ -2,7 +2,7 @@ version: '3'
 
 services:
   reverse-proxy:
-    image: my_golang_proxy:latest
+    image: my_golang_proxy
     build: 
       context: .
       dockerfile: ./Dockerfile.reverse
@@ -20,7 +20,7 @@ services:
       - backend
 
   app1:
-    image: webserver-6
+    image: my_webserver
     build: 
       context: echo-server
       dockerfile: ./Dockerfile
@@ -33,7 +33,7 @@ services:
       - backend
 
   app2:
-    image: webserver-6
+    image: my_webserver
     container_name: ${WEBSERVER2_NAME}
     hostname: ${WEBSERVER2_NAME}
     environment:
