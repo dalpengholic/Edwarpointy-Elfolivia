@@ -37,26 +37,37 @@ $ curl http://localhost:8080/app2
 hello from app2
 ```
 
-- 5. If you want to add more echo server
+- 6. If you want to add more echo server
   - 1. Add more service block to docker-compose file
 ```
 ...
-  app3:
+  newapp3:
     image: my_webserver
     container_name: ${WEBSERVER3_NAME}
     hostname: ${WEBSERVER3_NAME}
     environment:
       - EnvPort=8883
-      - EnvMessage=hihihoho
+      - EnvMessage=moi
     networks:
       - backend
 ```
   - 2. Add env variabe at .env
 ```
-WEBSERVER1_NAME=backapp1
-WEBSERVER2_NAME=backapp2
-WEBSERVER3_NAME=backapp3
+WEBSERVER1_NAME=app1
+WEBSERVER2_NAME=app2
+WEBSERVER3_NAME=newapp3
 ```
   - 3. Rerun with --build flag
 `$ docker-compose up -d --build`
+
+
+  - 5. Check with curl command
+```Shell 
+$ curl http://localhost:8080/app1
+hello from app1
+$ curl http://localhost:8080/app2
+hello from app2
+$ curl http://localhost:8080/app3
+moi from newapp3
+```
 
