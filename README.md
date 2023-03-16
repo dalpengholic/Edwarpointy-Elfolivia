@@ -36,7 +36,7 @@ WEBSERVER2_NAME=backapp2
 ```
 ...
   app3:
-    image: webserver-6
+    image: my_webserver
     container_name: ${WEBSERVER3_NAME}
     hostname: ${WEBSERVER3_NAME}
     environment:
