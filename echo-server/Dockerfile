@@ -6,7 +6,7 @@ FROM golang:1.20.2-alpine3.16 AS builder
 WORKDIR /app
 
 # Copy the necessary contents into the container at /app
-COPY go.mod webserver.go README.md /app/
+COPY go.mod webserver.go /app/
 
 # Build the Golang binary
 RUN go build -o main .
