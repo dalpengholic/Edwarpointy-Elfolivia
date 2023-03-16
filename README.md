@@ -17,4 +17,5 @@ Main consideration during the whole assginment
 - Choose the tooling which you consider minimal for the given assignment.
 - Make sure to include instructions about how to reproduce your solution.
 - Your MVP will not go straight into production. However, your programmer peers will look at it, and it will be hard to convince them if the code is messy.
+```
 
