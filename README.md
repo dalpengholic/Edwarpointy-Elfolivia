@@ -41,7 +41,7 @@ hello from app2
 ```
 
 - 6. If you want to add more echo server
-  -  Add more service block to docker-compose file
+Add more service block to docker-compose file
 ```Shell
   newapp3:
     image: my_webserver
@@ -55,7 +55,7 @@ hello from app2
 ```
 
  
-  -  Add env variabe at .env
+Add env variabe at .env
 ```YAML
 WEBSERVER1_NAME=app1
 WEBSERVER2_NAME=app2
@@ -63,13 +63,13 @@ WEBSERVER3_NAME=newapp3
 ```
 
 
-- 6.3 Rerun with --build flag
+Rerun with --build flag
 ```Shell
 $ docker-compose up -d --build
 ```
 
  
-- 6.4 Check with curl command
+Check with curl command
 ```Shell 
 $ curl http://localhost:8080/app1
 hello from app1
