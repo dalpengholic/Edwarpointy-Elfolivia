@@ -19,7 +19,7 @@ type DockerCompose struct {
 
 type Service struct {
 	ContainerName string            `yaml:"container_name"`
-//	Ports         []string
+	Ports         []string
 	Environment   []string
 }
 
@@ -67,7 +67,7 @@ func MakeBackendMap(param_compose DockerCompose) map[string]*url.URL{
 
 func main() {
         // Parsing docker-compose.yml file to info(container name, port, env variables)
-	dockerCompose := ParseVariables("../docker-compose.yml")
+	dockerCompose := ParseVariables("docker-compose.yml")
 //	for k,v := range dockerCompose.Services {
 //	        fmt.Println("Print services")
 //		fmt.Println(k, v)
