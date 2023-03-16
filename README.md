@@ -1,4 +1,4 @@
-## IQM-assignment-2
+## Edwarpointy-Elfolivia-2
 ### Main concept of Dockerfile
 To create a smaller Minimum-Viable Product (MVP) image, I used a two-stage approach called `multi-stage builds`. In the first stage, I only copied the necessary files to build the binary file, and in the second stage, I added those files to the busybox image. As a result, `the MVP image size decreased from 314MB to 11.5MB`.
 
@@ -7,12 +7,12 @@ To create a smaller Minimum-Viable Product (MVP) image, I used a two-stage appro
 ```Shell
 $ mkdir mytmp
 $ cd mytmp
-$ git clone git@github.com:dalpengholic/IQM-assignment.git
+$ git clone git@github.com:dalpengholic/Edwarpointy-Elfolivia.git
 ```
 
 - 2. Checkout to task-2 branch
 ```Shell
-$ cd IQM-assignment
+$ cd Edwarpointy-Elfolivia
 $ git checkout task-2
 ```
 - 3. Build docker image
