@@ -10,20 +10,26 @@ To ensure that the reverse proxy server could route traffic to new instances, I 
 $ mkdir mytmp
 $ cd mytmp
 $ git clone git@github.com:dalpengholic/IQM-assignment.git
-$ cd IQM-assignment
 ```
 - 2. Checkout to task-3 branch
-`$ git checkout task-3`
+```Shell
+$ cd IQM-assignment
+$ git checkout task-3
+```
 
 - 3. Create `.env` file
 `$ vim .env`
 ```Shell
-WEBSERVER1_NAME=backapp1
-WEBSERVER2_NAME=backapp2
+WEBSERVER1_NAME=app1
+WEBSERVER2_NAME=app2
 ```
 
 - 4. Build docker image
 `$ docker-compose up -d`
+
+- 5. Check with curl command
+```Shell
+```
 
 - 5. If you want to add more echo server
   - 1. Add more service block to docker-compose file
