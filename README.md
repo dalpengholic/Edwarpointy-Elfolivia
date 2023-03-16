@@ -1,6 +1,6 @@
 # IQM-assignment
 
-Please click links below. Each link has its result.
+Please find below a list of links, with each link corresponding to a different branch within this repository. Each branch contains its own distinct result. Kindly click on the relevant link to access the desired result.
 
 [Task 1: Implement an HTTP echo server](https://github.com/dalpengholic/IQM-assignment/tree/task-1)
 
