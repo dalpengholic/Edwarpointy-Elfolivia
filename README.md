@@ -1,4 +1,4 @@
-## IQM-assignment-3
+## Edwarpointy-Elfolivia-3
 ### Main Concept
 To create a single HTTP endpoint, I built a reverse proxy server. To keep things simple, I avoided using popular reverse proxies such as Traefik or Nginx. I made sure to set up and configure the Echo Servers behind the reverse proxy so that all external communication would go through the reverse proxy server.
 
@@ -9,11 +9,11 @@ To ensure that the reverse proxy server could route traffic to new instances, I 
 ```Shell
 $ mkdir mytmp
 $ cd mytmp
-$ git clone git@github.com:dalpengholic/IQM-assignment.git
+$ git clone git@github.com:dalpengholic/Edwarpointy-Elfolivia.git
 ```
 - 2. Checkout to task-3 branch
 ```Shell
-$ cd IQM-assignment
+$ cd Edwarpointy-Elfolivia
 $ git checkout task-3
 ```
 
