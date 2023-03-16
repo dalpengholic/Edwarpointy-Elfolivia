@@ -8,7 +8,7 @@ When I had to choose a programming language for building a simple echo server, I
 ```Shell
 $ mkdir mytmp
 $ cd mytmp
-$ git clone git@github.com:dalpengholic/Edwarpointy-Elfolivia.git
+$ git clone https://github.com/dalpengholic/Edwarpointy-Elfolivia.git
 ```
 
 - 2. Checkout to task-2 branch
