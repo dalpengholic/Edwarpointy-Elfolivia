@@ -1,19 +1,7 @@
-# IQM-assignment
-
-Main points of consideration during the whole assginment
-```
-- Provide simple and to-the-point solutions to the tasks.
-- Choose the tooling which you consider minimal for the given assignment.
-- Make sure to include instructions about how to reproduce your solution.
-- Your MVP will not go straight into production. However, your programmer peers will look at
-it, and it will be hard to convince them if the code is messy.
-```
-
 ## IQM-assignment-1
-### Decision Point-1: Which langauge would be better to implement simple echo server?
-- Candidates: Golang, Python
-- After a bit of searching for each language, I ended up choosing Golang.
-- Compared to Python, with Golang it seemed easier to implement an Echo server through the default libraries without any web framework. Also, the number of lines of code required to write seemed short.
+### Programming language decision: Golang 
+When I had to choose a programming language for building a simple echo server, I had two options - Golang and Python. After some research, I chose Golang because it was easier to implement the server using its default libraries without any web framework, and the amount of code needed looked less than in Python.
+
 
 ### How to run
 - 1. Open terminal and create a folder and download this branch in the folder: 
