@@ -1,15 +1,15 @@
-# IQM-assignment
+# Edwarpointy-Elfolivia
 
 Please find below a list of links, with each link corresponding to a different branch within this repository. Each branch contains its own distinct result. 
 
-[Task 1: Implement an HTTP echo server](https://github.com/dalpengholic/IQM-assignment/tree/task-1)
+[Task 1: Implement an HTTP echo server](https://github.com/dalpengholic/Edwarpointy-Elfolivia/tree/task-1)
 
 
-[Task 2: Containerize the echo server](https://github.com/dalpengholic/IQM-assignment/tree/task-2)
+[Task 2: Containerize the echo server](https://github.com/dalpengholic/Edwarpointy-Elfolivia/tree/task-2)
 
 
 [Task 3: Create deployment template for 2 echo servers with a single HTTP
-entrypoint](https://github.com/dalpengholic/IQM-assignment/tree/task-3)
+entrypoint](https://github.com/dalpengholic/Edwarpointy-Elfolivia/tree/task-3)
 
 Main consideration during the whole assginment
 ```
