@@ -64,7 +64,7 @@ WEBSERVER3_NAME=newapp3
 $ docker-compose up -d --build
 ```
 
-  - 5. Check with curl command
+  - 4. Check with curl command
 ```Shell 
 $ curl http://localhost:8080/app1
 hello from app1
