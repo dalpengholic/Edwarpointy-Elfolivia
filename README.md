@@ -17,7 +17,12 @@ $ cd IQM-assignment
 $ git checkout task-1
 ```
 
-- 3. Run echo server
+- 3. Build from source
+```Shell
+$ go build 
+```
+
+- 4. Run echo server
 ```Shell
 ## 1. Default command 
 $ ./webserver
@@ -28,7 +33,7 @@ $ ./webserver
 $ ./webserver -c moimoi -p 8888
 ```
 
-- 4. Open new terminal and run curl command
+- 5. Open new terminal and run curl command
 ```
 ## In case of running server with the advanced command
 $ curl http://localhost:8888
