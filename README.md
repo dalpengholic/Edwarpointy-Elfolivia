@@ -54,7 +54,7 @@ hello from app2
       - backend
 ```
   - 2. Add env variabe at .env
-```
+```YAML
 WEBSERVER1_NAME=app1
 WEBSERVER2_NAME=app2
 WEBSERVER3_NAME=newapp3
