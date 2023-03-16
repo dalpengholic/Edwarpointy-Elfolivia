@@ -1,4 +1,4 @@
-## IQM-assignment-1
+## Edwarpointy-Elfolivia-1
 ### Programming language decision: Golang 
 When I had to choose a programming language for building a simple echo server, I had two options - Golang and Python. After some research, I chose Golang because it was easier to implement the server using its default libraries without any web framework, and the amount of code needed looked less than in Python.
 
